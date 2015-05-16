@@ -1,0 +1,22 @@
+#teamA {
+    width: 50%;
+    float: left;
+}
+
+#teamB {
+    width: 50%;
+    float: left;
+}
+
+textarea {
+    resize: none;
+}
+
+#logout {
+    float: right;
+}
+
+#login {
+    
+}
+
