@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Φιλοξενητής: 127.0.0.1
--- Χρόνος δημιουργίας: 14 Μάη 2015 στις 12:06:16
+-- Χρόνος δημιουργίας: 16 Μάη 2015 στις 17:10:37
 -- Έκδοση διακομιστή: 5.6.24
 -- Έκδοση PHP: 5.6.8
 
@@ -31,11 +31,11 @@ USE `ptixiaki`;
 CREATE TABLE IF NOT EXISTS `arithm_apotel` (
   `id` int(11) NOT NULL,
   `lesson` int(11) NOT NULL,
-  `question` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `question` varchar(255) NOT NULL,
   `right_answer` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `arithm_apotel_results` (
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL,
   `succeeded_or_failed` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `pollaplis` (
   `right_answer` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -84,13 +84,13 @@ CREATE TABLE IF NOT EXISTS `pollaplis_results` (
   `id` int(11) NOT NULL,
   `aem` int(11) NOT NULL,
   `lesson` int(11) NOT NULL,
-  `question` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `question` varchar(255) NOT NULL,
   `given_answer` int(11) NOT NULL,
   `right_answer` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL,
-  `succeeded_or_failed` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+  `succeeded_or_failed` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -101,11 +101,11 @@ CREATE TABLE IF NOT EXISTS `pollaplis_results` (
 CREATE TABLE IF NOT EXISTS `sosto_lathos` (
   `id` int(11) NOT NULL,
   `lesson` int(11) NOT NULL,
-  `question` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `question` varchar(255) NOT NULL,
   `right_answer` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -123,7 +123,28 @@ CREATE TABLE IF NOT EXISTS `sosto_lathos_results` (
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL,
   `succeeded_or_failed` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Δομή πίνακα για τον πίνακα `teams`
+--
+
+CREATE TABLE IF NOT EXISTS `teams` (
+  `lesson` int(11) NOT NULL,
+  `teams` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Άδειασμα δεδομένων του πίνακα `teams`
+--
+
+INSERT INTO `teams` (`lesson`, `teams`) VALUES
+(1, 2),
+(2, 4),
+(3, 2),
+(4, 4);
 
 -- --------------------------------------------------------
 
@@ -137,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `vathmologies` (
   `lesson` int(11) NOT NULL,
   `grade` float NOT NULL,
   `status` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -155,9 +176,9 @@ CREATE TABLE IF NOT EXISTS `xronos` (
 --
 
 INSERT INTO `xronos` (`lesson`, `time`) VALUES
-(1, 22),
-(2, 1),
-(3, 5),
+(1, 11),
+(2, 5),
+(3, 11),
 (4, 1);
 
 --
@@ -214,37 +235,37 @@ ALTER TABLE `vathmologies`
 -- AUTO_INCREMENT για πίνακα `arithm_apotel`
 --
 ALTER TABLE `arithm_apotel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT για πίνακα `arithm_apotel_results`
 --
 ALTER TABLE `arithm_apotel_results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT για πίνακα `pollaplis`
 --
 ALTER TABLE `pollaplis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT για πίνακα `pollaplis_results`
 --
 ALTER TABLE `pollaplis_results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT για πίνακα `sosto_lathos`
 --
 ALTER TABLE `sosto_lathos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT για πίνακα `sosto_lathos_results`
 --
 ALTER TABLE `sosto_lathos_results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT για πίνακα `vathmologies`
 --
 ALTER TABLE `vathmologies`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
