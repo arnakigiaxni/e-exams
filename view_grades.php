@@ -10,6 +10,7 @@
 ?>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
     <meta charset="UTF-8">
 </head>
 
@@ -23,7 +24,6 @@
     </select><br><br>
     Αναζήτηση μέσω AEM: <input type="text" name="aem" maxlength="5" size="1" />
     <br /><br />
-    
     <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="submit" value="Δες τις βαθμολογίες" />
 </form>
@@ -53,6 +53,7 @@
                     </tr>";
 
                     while($grade_row=mysql_fetch_array($grades)) {
+                        
                         if($grade_row["lesson"]==1){
                             $lesson = 'Προγραμματισμός Ι';
                         }
@@ -65,13 +66,19 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                            
-                        echo"<tr>
-                            <td>$lesson</td>
+                        
+                        if ($grade_row["status"]=='ΠΕΡΑΣΕ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"<td>$lesson</td>
                             <td>".$grade_row["aem"]."</td>
                             <td>".$grade_row["grade"]."</td>
                             <td>".$grade_row["status"]."</td>
                         </tr>";
+                        
                     }
                 echo"</table><br><br>";
             }
@@ -109,7 +116,14 @@
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
                             
-                        echo"<tr>
+                        
+                        if ($grade_row["status"]=='ΠΕΡΑΣΕ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                             <td>$lesson</td>
                             <td>".$grade_row["aem"]."</td>
                             <td>".$grade_row["grade"]."</td>
@@ -140,6 +154,7 @@
                     </tr>";
 
                     while($grade_row=mysql_fetch_array($grades)) {
+                        
                         if($grade_row["lesson"]==1){
                             $lesson = 'Προγραμματισμός Ι';
                         }
@@ -153,7 +168,14 @@
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
                             
-                        echo"<tr>
+                        
+                        if ($grade_row["status"]=='ΠΕΡΑΣΕ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                             <td>$lesson</td>
                             <td>".$grade_row["aem"]."</td>
                             <td>".$grade_row["grade"]."</td>

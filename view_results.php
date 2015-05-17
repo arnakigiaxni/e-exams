@@ -10,6 +10,7 @@
 ?>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
     <meta charset="UTF-8">
 </head>
 
@@ -73,7 +74,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question1_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question1_row["aem"]."</td>
                                 <td>Σωστό / Λάθος</td>
@@ -101,7 +110,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question2_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question2_row["aem"]."</td>
                                 <td>Πολλαπλής επιλογής</td>
@@ -129,7 +146,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question3_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question3_row["aem"]."</td>
                                 <td>Αριθμητικού αποτελέσματος</td>
@@ -184,7 +209,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question1_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question1_row["aem"]."</td>
                                 <td>Σωστό / Λάθος</td>
@@ -212,7 +245,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question2_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question2_row["aem"]."</td>
                                 <td>Πολλαπλής επιλογής</td>
@@ -240,7 +281,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question3_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question3_row["aem"]."</td>
                                 <td>Αριθμητικού αποτελέσματος</td>
@@ -297,7 +346,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question1_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question1_row["aem"]."</td>
                                 <td>Σωστό / Λάθος</td>
@@ -325,7 +382,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question1_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question2_row["aem"]."</td>
                                 <td>Πολλαπλής επιλογής</td>
@@ -353,7 +418,15 @@
                         else {
                             $lesson = 'Γραμμικός προγραμματισμός';
                         }
-                        echo"<tr>
+                        
+                        
+                        if ($question1_row["succeeded_or_failed"]=='ΣΩΣΤΟ'){
+                            echo"<tr id='green'>";
+                        }
+                        else {
+                            echo"<tr id='red'>";
+                        }
+                            echo"
                                 <td>$lesson</td>
                                 <td>".$question3_row["aem"]."</td>
                                 <td>Αριθμητικού αποτελέσματος</td>

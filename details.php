@@ -13,7 +13,7 @@
         <title></title>
     </head>
     <body>
-        <button id='logout' onclick="location.href='logout.php'">Αποσύνδεση</button>
+        
         <form method="post" action='questions.php'>
             Αριθμός ερωτήσεων: <input type="text" maxlength="2" name="questions_number" size="1"/> 
             <br /><br />

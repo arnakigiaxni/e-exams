@@ -1,5 +1,6 @@
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <?php
@@ -25,6 +26,7 @@
                 
                 if ($given==$right){
                     $apotel = 'ΣΩΣΤΟ';
+                    $vathm1 += $question1_row["points"];
                 }
                 else {
                     $apotel = 'ΛΑΘΟΣ';
@@ -48,6 +50,7 @@
                 
                 if ($given==$right){
                     $apotel = 'ΣΩΣΤΟ';
+                    $vathm2 += $question2_row["points"]; 
                 }
                 else {
                     $apotel = 'ΛΑΘΟΣ';
@@ -71,6 +74,7 @@
                 
                 if ($given==$right){
                     $apotel = 'ΣΩΣΤΟ';
+                    $vathm3 = $question3_row["points"];
                 }
                 else {
                     $apotel = 'ΛΑΘΟΣ';
@@ -80,45 +84,20 @@
                 VALUES ('".$lesson."', '".$question."', '".$right."', '".$points."', '".$team."', '".$aem."', '".$given."', '".$apotel."' )");
         }         
         
-        $sl_apotel = mysql_query("SELECT * FROM sosto_lathos_results WHERE aem=$aem && lesson=$lesson");
-        
-        $vathm=0;
-        while($apot=mysql_fetch_array($sl_apotel)) {
-            if($apot["succeeded_or_failed"]=='ΣΩΣΤΟ'){
-                $vathm+=$apot['points'];   
-            }
-        }
- 
-       $poll_apotel = mysql_query("SELECT * FROM pollaplis_results WHERE aem=$aem && lesson=$lesson");
-        
-       $vathm2=0;
-       while($apot2=mysql_fetch_array($poll_apotel)) {
-            if($apot2["succeeded_or_failed"]=='ΣΩΣΤΟ'){
-                $vathm2+=$apot2['points'];   
-            }
-        }
-        
-       $ar_apotel = mysql_query("SELECT * FROM arithm_apotel_results WHERE aem=$aem && lesson=$lesson");
-        
-       $vathm3=0;
-       while($apot3=mysql_fetch_array($ar_apotel)) {
-            if($apot3["succeeded_or_failed"]=='ΣΩΣΤΟ'){
-                $vathm3+=$apot3['points'];   
-            }
-        }
  
                 
-        $vathm_ol = $vathm+$vathm2+$vathm3;
+        $vathm_ol = $vathm1+$vathm2+$vathm3;
         $vathm_ol2 = $vathm_ol/10;
         
         if($vathm_ol>=50){
-            echo"πέρασες ($vathm_ol2/10)";
+            echo"<span id='apotel'>Συγχαρητήρια, πέρασες! Με βαθμό <b>$vathm_ol2</b> στα 10</span>";
             $status = 'ΠΕΡΑΣΕ';
         }
         else {
-            echo"κόπηκες ($vathm_ol2/10)";
+            echo"<span id='apotel'>Δυστυχώς, κόπηκες! Η βαθμολογία σου είναι <b>$vathm_ol2</b> στα 10</span>";
             $status = 'ΚΟΠΗΚΕ';
         }
+        
         
         mysql_query("INSERT INTO vathmologies (aem, lesson, grade, status)
             VALUES ('".$aem."', '".$lesson."', '".$vathm_ol2."', '".$status."')");

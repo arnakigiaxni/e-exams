@@ -7,7 +7,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="utf8" >
-    <script src="js/countdown.js" type="text/javascript"></script>
 </head>
 
 <div id="diss">    
@@ -88,12 +87,12 @@
             $ip = substr($ip2, -1);
             
             echo"<form method='post' action='results.php' >
-                <div><span id='time'></span></div>
+                
                 <input type='hidden' value='$aem' name='aem' />
                 <input type='hidden' value='$lesson' name='lesson2' />
             ";
             
-            if ($teams==2){
+            if ($teams2==2){
                 if($ip==1 || $ip==3 || $ip==5 || $ip==7 || $ip==9){
 
                     echo"<input type='hidden' value='1' name='team' />";
@@ -129,7 +128,7 @@
                 }
             }
             
-                
+             echo"<div id='cd_timer'>Απομένουν <span id='time'></span> λεπτά</div>";   
                 $questions1 = mysql_query("SELECT * FROM sosto_lathos where lesson=$lesson && team=$team");
                 
                 if (mysql_num_rows($questions1)==0){

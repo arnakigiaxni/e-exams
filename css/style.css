@@ -16,7 +16,27 @@ textarea {
     float: right;
 }
 
-#login {
-    
+table {
+    border-collapse: collapse;
+    text-align: center;
 }
 
+#green {
+    background-color: #5CD65C;
+}
+
+#red {
+    background-color: #FF3333;
+}
+
+#cd_timer {
+    color: red;
+    font-size: 200%;
+    float: right;
+    position: fixed;
+    right: 5px;
+}
+
+#apotel {
+    font-size: 150%;
+}
