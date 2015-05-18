@@ -5,7 +5,7 @@
 <?php
     include_once 'db_connect.php';
     mysql_query("SET NAMES utf8");
-    //error_reporting(0);
+    error_reporting(0);
     
     session_start();
     if($_SESSION['success_login']!=1){

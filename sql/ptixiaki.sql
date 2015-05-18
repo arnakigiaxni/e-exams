@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `arithm_apotel` (
   `id` int(11) NOT NULL,
   `lesson` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `right_answer` int(11) NOT NULL,
+  `right_answer` float NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
@@ -47,8 +47,8 @@ CREATE TABLE IF NOT EXISTS `arithm_apotel_results` (
   `id` int(11) NOT NULL,
   `aem` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `right_answer` int(11) NOT NULL,
-  `given_answer` int(11) NOT NULL,
+  `right_answer` float NOT NULL,
+  `given_answer` float NOT NULL,
   `lesson` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL,

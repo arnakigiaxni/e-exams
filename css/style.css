@@ -22,19 +22,21 @@ table {
 }
 
 #green {
-    background-color: #5CD65C;
+    background-color: #70DB70;
 }
 
 #red {
-    background-color: #FF3333;
+    background-color: #FF6666;
 }
 
 #cd_timer {
     color: red;
-    font-size: 200%;
+    font-size: 150%;
     float: right;
     position: fixed;
-    right: 5px;
+    right: 10px;
+    border-style: dotted;
+    border-color: red;
 }
 
 #apotel {

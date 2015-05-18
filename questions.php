@@ -1,9 +1,10 @@
 <?php
     session_start();
+    mysql_query("SET NAMES utf8");
     if($_SESSION['success_login']!=1){
         header('Location: login.php');
     }
-    //error_reporting(0);
+    error_reporting(0);
 ?>
 
 <html>
@@ -380,7 +381,7 @@
                                 </div>  
 
                                  <div id='div8$x' style='visibility:hidden; display:none'>
-                                    <textarea rows='4' cols='65' name='quest_pollaplis$x' placeholder='Ερώτηση...'></textarea><br /><br />
+                                    <textarea rows='4' cols='65' name='quest_pollaplis3$x' placeholder='Ερώτηση...'></textarea><br /><br />
                                     <input type='radio' name='radio5$x' value='1'/><textarea rows='2' name='answer9$x' cols='55' placeholder='Γράψτε τις πιθανές απαντήσεις και επιλέξτε τη σωστή'></textarea><br> 
                                     <input type='radio' name='radio5$x' value='2'/><textarea rows='2' name='answer10$x' cols='55'></textarea><br>
                                     <input type='radio' name='radio5$x' value='3'/><textarea rows='2' name='answer11$x' cols='55'></textarea><br>

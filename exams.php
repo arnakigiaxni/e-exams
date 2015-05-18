@@ -2,7 +2,7 @@
     include_once "db_connect.php";
     mysql_query("SET NAMES utf8");
     
-    //error_reporting(0);
+    error_reporting(0);
 ?>
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -32,6 +32,9 @@
         
         if(empty($_POST['aem']) || empty($_POST['lesson'])){
             echo "Παρακαλώ συμπληρώστε όλα τα πεδία";
+        }
+        else if (!preg_match("/^[0-9]*$/",$_POST['aem'])){
+            echo"Μόνο αριθμοί επιτρέπονται στο ΑΕΜ";
         }
         else {            
             $aem = $_POST['aem'];
@@ -128,7 +131,7 @@
                 }
             }
             
-             echo"<div id='cd_timer'>Απομένουν <span id='time'></span> λεπτά</div>";   
+             echo"<div id='cd_timer'> <span id='time'></span> </div>";   
                 $questions1 = mysql_query("SELECT * FROM sosto_lathos where lesson=$lesson && team=$team");
                 
                 if (mysql_num_rows($questions1)==0){

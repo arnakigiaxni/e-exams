@@ -30,6 +30,7 @@
                             <input type="radio" name="teams" value="4" />4
             <br /><br />
             
+            <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="submit" value="Επόμενο" />
             
         </form> <br /><br />   

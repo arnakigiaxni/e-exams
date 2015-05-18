@@ -1,5 +1,6 @@
 <?php
     include_once "db_connect.php";
+    mysql_query("SET NAMES utf8");
     error_reporting(0);
 
     session_start();
@@ -54,32 +55,33 @@
                echo "<center>Χρόνος εξέτασης:<b> ".$time_row["time"]." λεπτά<br></b>";
            }
             echo"Μάθημα: <b> $lesson2 </center></b></br /><br />";
+            
+            $questions3 = mysql_query("SELECT * FROM sosto_lathos where lesson=$lesson");
 
-            $questions1 = mysql_query("SELECT * FROM arithm_apotel where lesson=$lesson");
-
-            if (mysql_num_rows($questions1)==0){
+            if (mysql_num_rows($questions3)==0){     
             }
             else {
                 echo"<table border=1>
                         <tr>
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
-                            <th>Σωστή απάντηση</th>
+                            <th>Σωστή απάντηση (Σ=1 Λ=2)</th>
                             <th>Μονάδες</th>
                             <th>Ομάδα</th>
                         </tr>";
 
-                    while($question1_row=mysql_fetch_array($questions1)) {
+                    while($question3_row=mysql_fetch_array($questions3)) {
                         echo"<tr>
-                                <td>Αριθμητικού αποτελέσματος</td>
-                                <td>".$question1_row["question"]."</td>
-                                <td>".$question1_row["right_answer"]."</td>
-                                <td>".$question1_row["points"]."</td>
-                                <td>".$question1_row["team"]."</td>
+                                <td>Σωστό - Λάθος</td>
+                                <td>".$question3_row["question"]."</td>
+                                <td>".$question3_row["right_answer"]."</td>
+                                <td>".$question3_row["points"]."</td>
+                                <td>".$question3_row["team"]."</td>
                             </tr>";
-                    }
-                    echo"</table><br><br>";
+                    }     
+                    echo"</table><br><br>";    
             }
+
 
             $questions2 = mysql_query("SELECT * FROM pollaplis where lesson=$lesson");
 
@@ -115,32 +117,32 @@
                     echo"</table><br><br>";
             }
 
+            $questions1 = mysql_query("SELECT * FROM arithm_apotel where lesson=$lesson");
 
-            $questions3 = mysql_query("SELECT * FROM sosto_lathos where lesson=$lesson");
-
-            if (mysql_num_rows($questions3)==0){     
+            if (mysql_num_rows($questions1)==0){
             }
             else {
                 echo"<table border=1>
                         <tr>
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
-                            <th>Σωστή απάντηση (Σ=1 Λ=2)</th>
+                            <th>Σωστή απάντηση</th>
                             <th>Μονάδες</th>
                             <th>Ομάδα</th>
                         </tr>";
 
-                    while($question3_row=mysql_fetch_array($questions3)) {
+                    while($question1_row=mysql_fetch_array($questions1)) {
                         echo"<tr>
-                                <td>Σωστό - Λάθος</td>
-                                <td>".$question3_row["question"]."</td>
-                                <td>".$question3_row["right_answer"]."</td>
-                                <td>".$question3_row["points"]."</td>
-                                <td>".$question3_row["team"]."</td>
+                                <td>Αριθμητικού αποτελέσματος</td>
+                                <td>".$question1_row["question"]."</td>
+                                <td>".$question1_row["right_answer"]."</td>
+                                <td>".$question1_row["points"]."</td>
+                                <td>".$question1_row["team"]."</td>
                             </tr>";
-                    }     
-                    echo"</table><br><br>";    
+                    }
+                    echo"</table><br><br>";
             }
+            
             if (mysql_num_rows($questions3)==0 && mysql_num_rows($questions2)==0 && mysql_num_rows($questions1)==0){    
                 echo"Δεν υπάρχουν καταχωρημένες ερωτήσεις";
             }           
