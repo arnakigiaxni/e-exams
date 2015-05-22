@@ -34,9 +34,10 @@ table {
     font-size: 150%;
     float: right;
     position: fixed;
-    right: 10px;
-    border-style: dotted;
+    right: 15%;
+    border-style: solid;
     border-color: red;
+    padding: 5px;
 }
 
 #apotel {
@@ -54,7 +55,11 @@ table {
 
 
 #body_exams {
-	background-image:url(../images/background.png);
+	background-image:url(../images/bg2.png);
+}
+
+#body_results {
+	background-image:url(../images/bg2.png);
 }
 
 #diss {
@@ -67,4 +72,24 @@ table {
 	border-color:#bfbfbf;
 	background-color:#bfbfbf;
 	border-radius: 5px;
+}
+
+#exams {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+#results {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.subs {
+    margin-left: 10%;
 }

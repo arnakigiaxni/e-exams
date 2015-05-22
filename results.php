@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
+<body id="body_results">
+    <div id="results">
 <?php
     include_once "db_connect.php";
     mysql_query("SET NAMES utf8");
@@ -91,11 +93,13 @@
         $vathm_ol2 = $vathm_ol/10;
         
         if($vathm_ol>=50){
-            echo"<span id='apotel'>Συγχαρητήρια, πέρασες! Με βαθμό <b>$vathm_ol2</b> στα 10</span>";
+            echo"<br><span id='apotel'><center>Συγχαρητήρια, πέρασες! Με βαθμό <b>$vathm_ol2</b> στα 10</span><br>
+                <img src='images/like_a_boss.jpg' /><br></center>";
             $status = 'ΠΕΡΑΣΕ';
         }
         else {
-            echo"<span id='apotel'>Δυστυχώς, κόπηκες! Η βαθμολογία σου είναι <b>$vathm_ol2</b> στα 10</span>";
+            echo"<br><span id='apotel'><center>Δυστυχώς, κόπηκες! Η βαθμολογία σου είναι <b>$vathm_ol2</b> στα 10</span><br>
+                <img src='images/oh_god_why.jpg' /><br></center>";
             $status = 'ΚΟΠΗΚΕ';
         }
         
@@ -104,3 +108,5 @@
             VALUES ('".$aem."', '".$lesson."', '".$vathm_ol2."', '".$status."')");
         
 ?>
+    </div>
+</body>

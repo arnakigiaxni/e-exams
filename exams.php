@@ -13,7 +13,7 @@
     <div id="diss">    
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
-            ΑΕΜ: <input type="text" maxlength="5" name="aem" size="1"/><br><br>
+            ΑΕΜ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" name="aem" size="1"/><br><br>
             Μάθημα: <select name="lesson" >
                         <option value='' selected disabled hidden></option>
                         <option value='1'>Προγραμματισμός Ι</option>
@@ -22,22 +22,23 @@
                         <option value='4'>Γραμμικός προγραμματισμός</option>
                     </select><br><br>
 
-             <input type="submit" value="Επόμενο" />       
+                    <center><input type="submit" value="Επόμενο" /></center>       
 
         </form>
-    </div>
+    
 </body>
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if(empty($_POST['aem']) || empty($_POST['lesson'])){
-            echo "Παρακαλώ συμπληρώστε όλα τα πεδία";
+            echo "Παρακαλώ συμπληρώστε όλα τα πεδία</div>";
         }
         else if (!preg_match("/^[0-9]*$/",$_POST['aem'])){
-            echo"Μόνο αριθμοί επιτρέπονται στο ΑΕΜ";
+            echo"Μόνο αριθμοί επιτρέπονται στο ΑΕΜ</div>";
         }
-        else {            
+        else {       
+            echo"</div>";
             $aem = $_POST['aem'];
             $lesson = $_POST['lesson'];
             
@@ -90,7 +91,7 @@
             $ip2 =  $_SERVER['REMOTE_ADDR'];
             $ip = substr($ip2, -1);
             
-            echo"<form method='post' action='results.php' >
+            echo"<div id='exams'> <form method='post' action='results.php' >
                 
                 <input type='hidden' value='$aem' name='aem' />
                 <input type='hidden' value='$lesson' name='lesson2' />
@@ -140,7 +141,7 @@
                 }
                 else {
                     
-                    echo "<h2><u>Θέμα 1ο</u></h2>
+                    echo "<div class='subs'><h2><u>Θέμα 1ο</u></h2>
                             Επιλέξτε τη σωστή απάντηση.<br><br><br>";
                     $x=0;
                     while($question1_row=mysql_fetch_array($questions1)) {
@@ -148,7 +149,7 @@
                         echo"<b>$x) 
                             ".$question1_row["question"]."</b> (".$question1_row["points"]." μονάδες)<br><br>
                             <input type='radio' value='1' name='radio$x'>Σωστό
-                            <input type='radio' value='2' name='radio$x'>Λάθος<br><br><br>
+                            <input type='radio' value='2' name='radio$x'>Λάθος<br><br><br></div>
                         ";
                     }    
                 }
@@ -159,7 +160,7 @@
                     
                 }
                 else {
-                    echo "<h2><u>Θέμα 2ο</u></h2>
+                    echo "<div class='subs'><h2><u>Θέμα 2ο</u></h2>
                             Επιλέξτε τη σωστή απάντηση.<br><br><br>";
 
                     $y=0;
@@ -170,7 +171,7 @@
                             <input type='radio' value='1' name='radio2$y'>".$question2_row["answer1"]."<br>
                             <input type='radio' value='2' name='radio2$y'>".$question2_row["answer2"]."<br>
                             <input type='radio' value='3' name='radio2$y'>".$question2_row["answer3"]."<br>
-                            <input type='radio' value='4' name='radio2$y'>".$question2_row["answer4"]."<br><br><br>
+                            <input type='radio' value='4' name='radio2$y'>".$question2_row["answer4"]."<br><br><br></div>
                         ";
                     }
                 }
@@ -182,7 +183,7 @@
                     
                 }
                 else {
-                    echo "<h2><u>Θέμα 3ο</u></h2>
+                    echo "<div class='subs'><h2><u>Θέμα 3ο</u></h2>
                             Γράψτε τη σωστή απάντηση.<br><br><br>";
 
                     $z=0;
@@ -190,12 +191,12 @@
                         $z++;
                         echo"<b>$z)
                             ".$question3_row["question"]."</b> (".$question3_row["points"]." μονάδες)<br><br>
-                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' /><br><br><br>
+                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' /><br><br><br></div>
                         ";
                     }
                     
                 }
-                echo"<input type='submit' value='Τέλος' id='sub'/></form>";
+                echo"<center><input type='submit' value='Τέλος' id='sub'/></center><br><br></form></div>";
             }     
         
     }
