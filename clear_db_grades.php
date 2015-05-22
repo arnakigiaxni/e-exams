@@ -9,6 +9,7 @@
 ?>
 
 <head>
+    <title>Καθάρισμα βάσης βαθμολογιών</title>
     <meta charset="UTF-8">
 </head>
     

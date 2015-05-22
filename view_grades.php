@@ -10,6 +10,7 @@
 ?>
 
 <head>
+    <title>Βαθμολογίες</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />    
     <meta charset="UTF-8">
 </head>
@@ -38,7 +39,7 @@
         
             $lesson = $_POST['lesson'];
 
-            $grades = mysql_query("SELECT * FROM vathmologies where lesson=$lesson");
+            $grades = mysql_query("SELECT * FROM vathmologies where lesson=$lesson ORDER BY aem");
             
             if (mysql_num_rows($grades)==0){
                 echo"Δεν βρέθηκαν στοιχεία";

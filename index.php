@@ -8,6 +8,7 @@
 
 <html>
     <head>
+        <title>Αρχική</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
@@ -17,16 +18,17 @@
         
         <a href="details.php">Καταχώρηση θεμάτων</a><br><br>
         
+        <a href="view_questions.php">Προεπισκόπηση θεμάτων</a><br><br>
+        
+        <a href="view_results.php">Αποτελέσματα εξετάσεων</a><br><br>
+        
+        <a href="view_grades.php">Βαθμολογίες</a><br><br>
+        
         <a href="clear_db_questions.php">Άδεισμα βάσης θεμάτων</a><br><br>
         
         <a href="clear_db_results.php">Άδεισμα βάσης αποτελεσμάτων</a><br><br>
         
-        <a href="clear_db_grades.php">Άδεισμα βάσης βαθμολογιών</a><br><br>
-        
-        <a href="view_grades.php">Βαθμολογίες</a><br><br>
-        
-        <a href="view_results.php">Δες τα αποτελέσματα</a><br><br>
-        
-        <a href="view_questions.php">Προεπισκόπηση θεμάτων</a>
+        <a href="clear_db_grades.php">Άδεισμα βάσης βαθμολογιών</a>
+
     </body>
 </html>

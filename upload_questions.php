@@ -1,4 +1,5 @@
 <head>
+    <title>Ανέβασμα θεμάτων</title>
     <meta charset="UTF-8">
 </head>
 

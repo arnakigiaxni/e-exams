@@ -7,6 +7,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="utf8" >
+    <title>Εξετάσεις</title>
 </head>
 
 <div id="diss">    

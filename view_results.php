@@ -10,6 +10,7 @@
 ?>
 
 <head>
+    <title>Αποτελέσματα εξετάσεων</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" /> 
     <meta charset="UTF-8">
 </head>
@@ -39,9 +40,9 @@
         
             $lesson = $_POST['lesson'];
 
-            $questions1 = mysql_query("SELECT * FROM sosto_lathos_results where lesson=$lesson");
-            $questions2 = mysql_query("SELECT * FROM pollaplis_results where lesson=$lesson");
-            $questions3 = mysql_query("SELECT * FROM arithm_apotel_results where lesson=$lesson");
+            $questions1 = mysql_query("SELECT * FROM sosto_lathos_results where lesson=$lesson ORDER BY aem");
+            $questions2 = mysql_query("SELECT * FROM pollaplis_results where lesson=$lesson ORDER BY aem");
+            $questions3 = mysql_query("SELECT * FROM arithm_apotel_results where lesson=$lesson ORDER BY aem");
 
             if (mysql_num_rows($questions3)==0 && mysql_num_rows($questions2)==0 && mysql_num_rows($questions1)==0){    
                 echo"Δεν υπάρχουν καταχωρημένα αποτελέσματα";

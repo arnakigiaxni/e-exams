@@ -42,3 +42,20 @@ table {
 #apotel {
     font-size: 150%;
 }
+
+#login {
+    position: fixed;
+    left: 500px;
+    right: 590px;
+    top: 225px;
+    bottom: 260px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+body {
+    max-width: 1366px;
+    max-height: 768px;
+    margin: auto;
+}

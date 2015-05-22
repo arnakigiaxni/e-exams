@@ -1,12 +1,14 @@
 <html>
     <head>
+        <title>Σύνδεση Διαχειριστή</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     
     <body><div id="login">
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-            Όνομα χρήστη: <input type="text" name="username" /><br /><br />
-            Κωδικός: <input type="password" name="password" /><br /><br />
+            Username: <input type="text" name="username" /><br /><br />
+            Password:&nbsp; <input type="password" name="password" /><br /><br />
                   
             
             <?php
