@@ -9,24 +9,24 @@
     <meta charset="utf8" >
     <title>Εξετάσεις</title>
 </head>
+<body id="body_exams">
+    <div id="diss">    
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
-<div id="diss">    
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+            ΑΕΜ: <input type="text" maxlength="5" name="aem" size="1"/><br><br>
+            Μάθημα: <select name="lesson" >
+                        <option value='' selected disabled hidden></option>
+                        <option value='1'>Προγραμματισμός Ι</option>
+                        <option value='2'>Προγραμματισμός ΙΙ</option>
+                        <option value='3'>Αριθμητικές μέθοδοι</option>
+                        <option value='4'>Γραμμικός προγραμματισμός</option>
+                    </select><br><br>
 
-        ΑΕΜ: <input type="text" maxlength="5" name="aem" size="1"/><br><br>
-        Μάθημα: <select name="lesson" >
-                    <option value='' selected disabled hidden></option>
-                    <option value='1'>Προγραμματισμός Ι</option>
-                    <option value='2'>Προγραμματισμός ΙΙ</option>
-                    <option value='3'>Αριθμητικές μέθοδοι</option>
-                    <option value='4'>Γραμμικός προγραμματισμός</option>
-                </select><br><br>
+             <input type="submit" value="Επόμενο" />       
 
-         <input type="submit" value="Επόμενο" />       
-
-    </form>
-</div>
-
+        </form>
+    </div>
+</body>
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

@@ -44,18 +44,27 @@ table {
 }
 
 #login {
-    position: fixed;
-    left: 500px;
-    right: 590px;
-    top: 225px;
-    bottom: 260px;
-    border-style: solid;
-    padding-left: 10px;
-    padding-top: 10px;
+	margin: auto;
+	margin-top:15%;
+	border-style: solid;
+	width:270px;
+        padding-left: 10px;
+        padding-top: 10px;
 }
 
-body {
-    max-width: 1366px;
-    max-height: 768px;
-    margin: auto;
+
+#body_exams {
+	background-image:url(../images/background.png);
+}
+
+#diss {
+	margin: auto;
+	margin-top:15%;
+	border-style: solid;
+	width:270px;
+        padding-left: 10px;
+        padding-top: 10px;
+	border-color:#bfbfbf;
+	background-color:#bfbfbf;
+	border-radius: 5px;
 }
