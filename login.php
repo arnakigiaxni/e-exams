@@ -3,6 +3,7 @@
         <title>Σύνδεση Διαχειριστή</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="images/favicon.ico"/>
     </head>
     
     <body><div id="login">

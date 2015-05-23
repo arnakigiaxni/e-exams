@@ -11,6 +11,7 @@
         <title>Προεπιλογές θεμάτων</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="images/favicon.ico"/>
         <title></title>
     </head>
     <body>

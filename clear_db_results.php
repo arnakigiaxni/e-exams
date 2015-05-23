@@ -12,6 +12,7 @@
     <title>Καθάρισμα βάσης αποτελεσμάτων</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
 
 <div class="center">

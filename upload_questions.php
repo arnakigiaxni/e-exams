@@ -1,6 +1,7 @@
 <head>
     <title>Ανέβασμα θεμάτων</title>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
 
 <?php

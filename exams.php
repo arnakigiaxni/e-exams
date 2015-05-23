@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="utf8" >
     <title>Εξετάσεις εργαστηρίου</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
 <body id="body_exams">
     <div id="diss">    

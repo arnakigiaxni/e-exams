@@ -13,6 +13,7 @@
     <title>Προεπισκόπηση θεμάτων</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="shortcut icon" href="images/favicon.ico"/>
 </head>
 <div class="center">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
