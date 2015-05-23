@@ -1,3 +1,7 @@
+* {
+    font-family: georgia;
+}
+
 #teamA {
     width: 50%;
     float: left;
@@ -13,7 +17,7 @@ textarea {
 }
 
 #logout {
-    float: right;
+    
 }
 
 table {
@@ -70,7 +74,7 @@ table {
 	margin: auto;
 	margin-top:15%;
 	border-style: solid;
-	width:270px;
+	width:300px;
         padding-left: 10px;
         padding-top: 10px;
 	border-color:#bfbfbf;
@@ -108,4 +112,24 @@ table {
 
 #aem {
     margin-right: 10%;
+}
+
+#index {
+        margin: auto;
+	margin-top:15%;
+	border-style: none;
+	width:250px;
+        padding-left: 23px;
+        border-radius: 10px;
+        background-color: #bfbfbf;
+}
+
+#index a {
+    text-decoration: none;
+    color: black;
+}
+
+#index a:hover {
+    text-decoration: none;
+    color: white;
 }
