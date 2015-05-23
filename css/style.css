@@ -47,10 +47,12 @@ table {
 #login {
 	margin: auto;
 	margin-top:15%;
-	border-style: solid;
+	border-style: none;
 	width:270px;
         padding-left: 10px;
         padding-top: 10px;
+        border-radius: 10px;
+        background-color: #bfbfbf;
 }
 
 

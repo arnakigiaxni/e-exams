@@ -108,5 +108,5 @@
             VALUES ('".$aem."', '".$lesson."', '".$vathm_ol2."', '".$status."')");
         
 ?>
-    </div>
+        <br></div>
 </body>

@@ -24,13 +24,13 @@
                         header('Location: index.php');
                     }
                     else {
-                        echo "Λάθος όνομα χρήστη ή κωδικός <br /><br />";
+                        echo "<center>Λάθος όνομα χρήστη ή κωδικός <br /><br /></center>";
                     }
                 }
             
             ?>
             
-            <input type="submit" value="Σύνδεση" />
+            <center><input type="submit" value="Σύνδεση" /></center><br>
         </form></div>
     </body>
 </html>
