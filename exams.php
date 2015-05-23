@@ -14,7 +14,8 @@
     <div id="diss">    
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
-            ΑΕΜ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" maxlength="5" name="aem" size="1"/><br><br>
+            ΑΕΜ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" maxlength="5" name="aem" size="5"/><br><br>
             Μάθημα: <select name="lesson" >
                         <option value='' selected disabled hidden></option>
                         <option value='1'>Προγραμματισμός Ι</option>

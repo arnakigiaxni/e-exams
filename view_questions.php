@@ -26,7 +26,7 @@
                 </select>
         <br /><br />
 
-        <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.php" class="back">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="submit" value="Προεπισκόπηση" />
     </form>
 

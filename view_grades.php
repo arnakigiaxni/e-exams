@@ -24,9 +24,10 @@
                     <option value='3'>Αριθμητικές μέθοδοι</option>
                     <option value='4'>Γραμμικός προγραμματισμός</option>
         </select><br><br>
-        Αναζήτηση μέσω AEM: <input type="text" name="aem" id='aem' maxlength="5" size="1" />
+        Αναζήτηση μέσω AEM: &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="aem" id='aem' maxlength="5" size="5" />
         <br /><br />
-        <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.php" class="back">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="submit" value="Δες τις βαθμολογίες" />
     </form>
 

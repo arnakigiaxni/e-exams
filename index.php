@@ -16,13 +16,15 @@
     
     <body>
         <div id="index">
-            <br><a href="details.php">Καταχώρηση θεμάτων</a><br><br>
+            <br>
+            
+            <a href="details.php">Καταχώρηση θεμάτων</a><br><br>
 
-            <a href="view_questions.php">Προεπισκόπηση θεμάτων</a><br><br>
+            <a href="view_questions.php">Προεπισκόπηση θεμάτων</a><hr>
 
             <a href="view_results.php">Αποτελέσματα εξετάσεων</a><br><br>
 
-            <a href="view_grades.php">Βαθμολογίες</a><br><br>
+            <a href="view_grades.php">Βαθμολογίες</a><hr>
 
             <a href="clear_db_questions.php">Άδεισμα βάσης θεμάτων</a><br><br>
 
@@ -30,7 +32,7 @@
 
             <a href="clear_db_grades.php">Άδεισμα βάσης βαθμολογιών</a><br><br>
             
-            <button id='logout' onclick="location.href='logout.php'">Αποσύνδεση</button><br><br>
+            <center><button id='logout' onclick="location.href='logout.php'">Αποσύνδεση</button><br><br></center>
         </div>
     </body>
 </html>

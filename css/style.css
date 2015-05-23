@@ -40,7 +40,7 @@ table {
     font-size: 150%;
     float: right;
     position: fixed;
-    right: 15%;
+    margin-left: 888px;
     border-style: solid;
     border-color: red;
     padding: 5px;
@@ -116,10 +116,11 @@ table {
 
 #index {
         margin: auto;
-	margin-top:15%;
+	margin-top:12%;
 	border-style: none;
 	width:250px;
         padding-left: 23px;
+        padding-right: 23px;
         border-radius: 10px;
         background-color: #bfbfbf;
 }
@@ -132,4 +133,27 @@ table {
 #index a:hover {
     text-decoration: none;
     color: white;
+}
+
+.back {
+    color: black;
+}
+
+.back:hover {
+    color: gray;
+}
+
+#details {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    padding: 2%;
+    padding-bottom: 1%;
+    margin-top: 12%;
+}
+
+#four {
+    margin-left: 30%;
 }

@@ -2,6 +2,7 @@
     <title>Ανέβασμα θεμάτων</title>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <?php
@@ -236,7 +237,7 @@
             }            
         }
 
-    echo "Τα θέματα σας ανέβηκαν επιτυχώς";
+    echo "<center>Τα θέματα σας ανέβηκαν επιτυχώς";
 ?>
 
-<br><br><a href="index.php">Πίσω</a>
+<br><br><a href="index.php" class="back">Πίσω</a></center>

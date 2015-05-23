@@ -208,7 +208,7 @@
         
                 }   
                 else {
-                        echo"";
+                        echo"<div id='four'>";
                         echo"<h1>Ομάδα Α</h1>";
 
                         for($i=1;$i<=$questions_number;$i++){
@@ -283,9 +283,8 @@
                                 </script>";
                             echo"<br /><br />";
                         }
-                        echo"";
 
-                        echo"";
+                        
                         echo"<h1>Ομάδα Β</h1>";
 
                         for($j=1;$j<=$questions_number;$j++){
@@ -362,7 +361,7 @@
                         }
                     echo"<br />";
 
-                        echo"";
+   
                         echo"<h1>Ομάδα Γ</h1>";
 
                         for($x=1;$x<=$questions_number;$x++){
@@ -437,9 +436,8 @@
                                 </script>";
                             echo"<br /><br />";
                         }
-                        echo"";
-
-                        echo"";
+                        
+                        
                         echo"<h1>Ομάδα Δ</h1>";
 
                         for($y=1;$y<=$questions_number;$y++){
@@ -514,15 +512,15 @@
                                 </script>";
                             echo"<br /><br />";
                         }
-                    echo"<br />";            
+                    echo"<br /></div>";            
                 }
         
        
 ?>
 
-            <a href="details.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="submit" value="Ανέβασμα θεμάτων στη βάση" />
-        </form>
+            <center><a href="details.php" class="back">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Ανέβασμα θεμάτων στη βάση" /></center>
+        </form><br>
 
     </body>
 </html>    
