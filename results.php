@@ -1,5 +1,5 @@
 <head>
-    <title>Αποτέλεσμα</title>
+    <title>Ήρθε το τέλος...</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
@@ -93,12 +93,12 @@
         $vathm_ol2 = $vathm_ol/10;
         
         if($vathm_ol>=50){
-            echo"<br><span id='apotel'><center>Συγχαρητήρια, πέρασες! Με βαθμό <b>$vathm_ol2</b> στα 10</span><br>
+            echo"<br><span id='apotel'><center>Συγχαρητήρια, πέρασες! Με βαθμό <b>$vathm_ol2</b> στα 10.</span><br>
                 <img src='images/like_a_boss.jpg' /><br></center>";
             $status = 'ΠΕΡΑΣΕ';
         }
         else {
-            echo"<br><span id='apotel'><center>Δυστυχώς, κόπηκες! Η βαθμολογία σου είναι <b>$vathm_ol2</b> στα 10</span><br>
+            echo"<br><span id='apotel'><center>Δυστυχώς, κόπηκες! Η βαθμολογία σου είναι <b>$vathm_ol2</b> στα 10.</span><br>
                 <img src='images/oh_god_why.jpg' /><br></center>";
             $status = 'ΚΟΠΗΚΕ';
         }

@@ -14,20 +14,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />    
     <meta charset="UTF-8">
 </head>
-
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-    Αναζήτηση μέσω μαθήματος: <select name="lesson" >
-                <option value='' selected disabled hidden></option>
-                <option value='1'>Προγραμματισμός Ι</option>
-                <option value='2'>Προγραμματισμός ΙΙ</option>
-                <option value='3'>Αριθμητικές μέθοδοι</option>
-                <option value='4'>Γραμμικός προγραμματισμός</option>
-    </select><br><br>
-    Αναζήτηση μέσω AEM: <input type="text" name="aem" maxlength="5" size="1" />
-    <br /><br />
-    <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="submit" value="Δες τις βαθμολογίες" />
-</form>
+<div class="center">
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+        Αναζήτηση μέσω μαθήματος: <select name="lesson" >
+                    <option value='' selected disabled hidden></option>
+                    <option value='1'>Προγραμματισμός Ι</option>
+                    <option value='2'>Προγραμματισμός ΙΙ</option>
+                    <option value='3'>Αριθμητικές μέθοδοι</option>
+                    <option value='4'>Γραμμικός προγραμματισμός</option>
+        </select><br><br>
+        Αναζήτηση μέσω AEM: <input type="text" name="aem" id='aem' maxlength="5" size="1" />
+        <br /><br />
+        <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Δες τις βαθμολογίες" />
+    </form>
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -189,3 +189,4 @@
     }
     
 ?>
+</div>

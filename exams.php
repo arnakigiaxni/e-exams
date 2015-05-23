@@ -7,7 +7,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="utf8" >
-    <title>Εξετάσεις</title>
+    <title>Εξετάσεις εργαστηρίου</title>
 </head>
 <body id="body_exams">
     <div id="diss">    

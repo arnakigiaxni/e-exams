@@ -19,6 +19,8 @@ textarea {
 table {
     border-collapse: collapse;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #green {
@@ -94,4 +96,16 @@ table {
 
 .subs {
     margin-left: 10%;
+    margin-right: 10%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    text-align: center;
+}
+
+#aem {
+    margin-right: 10%;
 }

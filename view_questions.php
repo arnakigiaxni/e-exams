@@ -14,20 +14,20 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" /> 
 </head>
+<div class="center">
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
+        Μάθημα: <select name="lesson" >
+                    <option value='' selected disabled hidden></option>
+                    <option value='1'>Προγραμματισμός Ι</option>
+                    <option value='2'>Προγραμματισμός ΙΙ</option>
+                    <option value='3'>Αριθμητικές μέθοδοι</option>
+                    <option value='4'>Γραμμικός προγραμματισμός</option>
+                </select>
+        <br /><br />
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-    Μάθημα: <select name="lesson" >
-                <option value='' selected disabled hidden></option>
-                <option value='1'>Προγραμματισμός Ι</option>
-                <option value='2'>Προγραμματισμός ΙΙ</option>
-                <option value='3'>Αριθμητικές μέθοδοι</option>
-                <option value='4'>Γραμμικός προγραμματισμός</option>
-            </select>
-    <br /><br />
-    
-    <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="submit" value="Προεπισκόπηση" />
-</form>
+        <a href="index.php">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Προεπισκόπηση" />
+    </form>
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -151,3 +151,4 @@
         }
     }
 ?>
+</div>
