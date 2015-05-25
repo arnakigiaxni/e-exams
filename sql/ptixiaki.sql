@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `sosto_lathos` (
   `id` int(11) NOT NULL,
   `lesson` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `right_answer` int(11) NOT NULL,
+  `right_answer` varchar(255) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -117,8 +117,8 @@ CREATE TABLE IF NOT EXISTS `sosto_lathos_results` (
   `id` int(11) NOT NULL,
   `aem` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `given_answer` int(11) NOT NULL,
-  `right_answer` int(11) NOT NULL,
+  `given_answer` varchar(255) NOT NULL,
+  `right_answer` varchar(255) NOT NULL,
   `lesson` int(11) NOT NULL,
   `points` int(11) NOT NULL,
   `team` int(11) NOT NULL,

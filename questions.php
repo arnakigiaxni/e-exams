@@ -84,8 +84,8 @@
 
                          <div id='div3$i' style='visibility:hidden; display:none'>
                              <textarea rows='4' cols='65' name='quest_sl$i' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                             <input type='radio' name='radio2$i' value='1'/>Σωστό<br>
-                             <input type='radio' name='radio2$i' value='2'/>Λάθος<br><br>
+                             <input type='radio' name='radio2$i' value='ΣΩΣΤΟ'/>Σωστό<br>
+                             <input type='radio' name='radio2$i' value='ΛΑΘΟΣ'/>Λάθος<br><br>
                              <input type='text' name='points_sl$i' placeholder='Μονάδες (0-100)' /><br />
                          </div>
 
@@ -161,8 +161,8 @@
 
                          <div id='div6$j' style='visibility:hidden; display:none'>
                              <textarea rows='4' cols='65' name='quest_sl2$j' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                             <input type='radio' name='radio4$j' value='1'/>Σωστό<br>
-                             <input type='radio' name='radio4$j' value='2'/>Λάθος</textarea><br><br>
+                             <input type='radio' name='radio4$j' value='ΣΩΣΤΟ'/>Σωστό<br>
+                             <input type='radio' name='radio4$j' value='ΛΑΘΟΣ'/>Λάθος</textarea><br><br>
                              <input type='text' name='points_sl2$j' placeholder='Μονάδες (0-100)' /><br />
                          </div>
 
@@ -240,8 +240,8 @@
 
                                  <div id='div3$i' style='visibility:hidden; display:none'>
                                      <textarea rows='4' cols='65' name='quest_sl$i' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                                     <input type='radio' name='radio2$i' value='1'/>Σωστό<br>
-                                     <input type='radio' name='radio2$i' value='2'/>Λάθος<br><br>
+                                     <input type='radio' name='radio2$i' value='ΣΩΣΤΟ'/>Σωστό<br>
+                                     <input type='radio' name='radio2$i' value='ΛΑΘΟΣ'/>Λάθος<br><br>
                                      <input type='text' name='points_sl$i' placeholder='Μονάδες (0-100)' /><br />
                                  </div>
 
@@ -316,8 +316,8 @@
 
                                  <div id='div6$j' style='visibility:hidden; display:none'>
                                      <textarea rows='4' cols='65' name='quest_sl2$j' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                                     <input type='radio' name='radio4$j' value='1'/>Σωστό<br>
-                                     <input type='radio' name='radio4$j' value='2'/>Λάθος</textarea><br><br>
+                                     <input type='radio' name='radio4$j' value='ΣΩΣΤΟ'/>Σωστό<br>
+                                     <input type='radio' name='radio4$j' value='ΛΑΘΟΣ'/>Λάθος</textarea><br><br>
                                      <input type='text' name='points_sl2$j' placeholder='Μονάδες (0-100)' /><br />
                                  </div>
 
@@ -393,8 +393,8 @@
 
                                  <div id='div9$x' style='visibility:hidden; display:none'>
                                      <textarea rows='4' cols='65' name='quest_sl3$x' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                                     <input type='radio' name='radio6$x' value='1'/>Σωστό<br>
-                                     <input type='radio' name='radio6$x' value='2'/>Λάθος<br><br>
+                                     <input type='radio' name='radio6$x' value='ΣΩΣΤΟ'/>Σωστό<br>
+                                     <input type='radio' name='radio6$x' value='ΛΑΘΟΣ'/>Λάθος<br><br>
                                      <input type='text' name='points_sl3$x' placeholder='Μονάδες (0-100)' /><br />
                                  </div>
 
@@ -469,8 +469,8 @@
 
                                  <div id='div12$y' style='visibility:hidden; display:none'>
                                      <textarea rows='4' cols='65' name='quest_sl4$y' placeholder='Γράψτε την ερώτηση σας και επιλέξτε τη σωστή απάντηση'></textarea><br /><br />
-                                     <input type='radio' name='radio8$y' value='1'/>Σωστό<br>
-                                     <input type='radio' name='radio8$y' value='2'/>Λάθος</textarea><br><br>
+                                     <input type='radio' name='radio8$y' value='ΣΩΣΤΟ'/>Σωστό<br>
+                                     <input type='radio' name='radio8$y' value='ΛΑΘΟΣ'/>Λάθος</textarea><br><br>
                                      <input type='text' name='points_sl4$y' placeholder='Μονάδες (0-100)' /><br />
                                  </div>
 

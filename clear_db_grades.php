@@ -41,8 +41,14 @@
             $lesson = $_POST['lesson'];
 
             mysql_query("DELETE FROM vathmologies WHERE lesson=$lesson");
-
-            echo "Επιτυχής καθαρισμός";
+            
+            if (mysql_affected_rows()>=1){
+                    echo "Επιτυχής καθαρισμός";
+            }
+            else {
+                echo"Δεν υπάρχει τίποτα προς διαγραφή";
+            }
+            
         }
     }
 ?>

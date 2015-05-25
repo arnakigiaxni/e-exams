@@ -20,8 +20,8 @@
     $lesson = $_POST['hidden2'];
     $time = $_POST['hidden3'];
     
-    mysql_query("UPDATE xronos SET time='".$time."' WHERE lesson=$lesson");
-    mysql_query("UPDATE teams SET teams='".$teams."' WHERE lesson=$lesson");
+    mysql_query("UPDATE xronos SET time='$time' WHERE lesson=$lesson");
+    mysql_query("UPDATE teams SET teams='$teams' WHERE lesson=$lesson");
     
     if ($teams == 2){
             for($x=1;$x<=$quest_numb;$x++){

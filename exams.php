@@ -138,20 +138,23 @@
              echo"<div id='cd_timer'> <span id='time'></span> </div>";   
                 $questions1 = mysql_query("SELECT * FROM sosto_lathos where lesson=$lesson && team=$team");
                 
+                
+                echo"<div class='subs'>";
+                
                 if (mysql_num_rows($questions1)==0){
                     
                 }
                 else {
                     
-                    echo "<div class='subs'><h2><u>Θέμα 1ο</u></h2>
+                    echo "<h2><u>Θέμα 1ο</u></h2>
                             Επιλέξτε τη σωστή απάντηση.<br><br><br>";
                     $x=0;
                     while($question1_row=mysql_fetch_array($questions1)) {
                         $x++;
                         echo"<b>$x) 
                             ".$question1_row["question"]."</b> (".$question1_row["points"]." μονάδες)<br><br>
-                            <input type='radio' value='1' name='radio$x'>Σωστό
-                            <input type='radio' value='2' name='radio$x'>Λάθος<br><br><br></div>
+                            <input type='radio' value='ΣΩΣΤΟ' name='radio$x'>Σωστό
+                            <input type='radio' value='ΛΑΘΟΣ' name='radio$x'>Λάθος<br><br><br>
                         ";
                     }    
                 }
@@ -162,7 +165,7 @@
                     
                 }
                 else {
-                    echo "<div class='subs'><h2><u>Θέμα 2ο</u></h2>
+                    echo "<h2><u>Θέμα 2ο</u></h2>
                             Επιλέξτε τη σωστή απάντηση.<br><br><br>";
 
                     $y=0;
@@ -173,7 +176,7 @@
                             <input type='radio' value='1' name='radio2$y'>".$question2_row["answer1"]."<br>
                             <input type='radio' value='2' name='radio2$y'>".$question2_row["answer2"]."<br>
                             <input type='radio' value='3' name='radio2$y'>".$question2_row["answer3"]."<br>
-                            <input type='radio' value='4' name='radio2$y'>".$question2_row["answer4"]."<br><br><br></div>
+                            <input type='radio' value='4' name='radio2$y'>".$question2_row["answer4"]."<br><br><br>
                         ";
                     }
                 }
@@ -185,7 +188,7 @@
                     
                 }
                 else {
-                    echo "<div class='subs'><h2><u>Θέμα 3ο</u></h2>
+                    echo "<h2><u>Θέμα 3ο</u></h2>
                             Γράψτε τη σωστή απάντηση.<br><br><br>";
 
                     $z=0;
@@ -193,13 +196,13 @@
                         $z++;
                         echo"<b>$z)
                             ".$question3_row["question"]."</b> (".$question3_row["points"]." μονάδες)<br><br>
-                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' /><br><br><br></div>
+                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' /><br><br><br>
                         ";
                     }
                     
                 }
                 echo"<center><input type='submit' value='Τέλος' id='sub'/></center><br><br></form></div>";
-            }     
+            }     echo"</div>";
         
     }
     

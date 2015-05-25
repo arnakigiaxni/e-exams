@@ -44,7 +44,12 @@
             mysql_query("DELETE FROM pollaplis_results WHERE lesson=$lesson");
             mysql_query("DELETE FROM sosto_lathos_results WHERE lesson=$lesson");
 
-            echo "Επιτυχής καθαρισμός";
+            if (mysql_affected_rows()>=1){
+                    echo "Επιτυχής καθαρισμός";
+            }
+            else {
+                echo"Δεν υπάρχει τίποτα προς διαγραφή";
+            }
         }
     }
 ?>
