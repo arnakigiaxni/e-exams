@@ -27,6 +27,10 @@ table {
     margin-right: auto;
 }
 
+td, th {
+    border: none
+}
+
 #green {
     background-color: #70DB70;
 }
