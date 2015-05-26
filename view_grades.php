@@ -50,8 +50,8 @@
                 echo"<table border=1>
                     <tr>
                         <th>Μάθημα</th>
-                        <th>ΑΕΜ</th>
-                        <th>Βαθμός</th>
+                        <th>ΑΕΜ&nbsp</th>
+                        <th>Βαθμός&nbsp</th>
                         <th>Κατάσταση</th>
                     </tr>";
 
@@ -100,8 +100,8 @@
                 echo"<table border=1>
                     <tr>
                         <th>Μάθημα</th>
-                        <th>ΑΕΜ</th>
-                        <th>Βαθμός</th>
+                        <th>ΑΕΜ&nbsp</th>
+                        <th>Βαθμός&nbsp</th>
                         <th>Κατάσταση</th>
                     </tr>";
 
@@ -151,8 +151,8 @@
                 echo"<table border=1>
                     <tr>
                         <th>Μάθημα</th>
-                        <th>ΑΕΜ</th>
-                        <th>Βαθμός</th>
+                        <th>ΑΕΜ&nbsp</th>
+                        <th>Βαθμός&nbsp</th>
                         <th>Κατάσταση</th>
                     </tr>";
 

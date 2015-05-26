@@ -67,15 +67,15 @@
                         <tr>
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
-                            <th>Σωστή απάντηση</th>
-                            <th>Μονάδες</th>
+                            <th>Σωστή απάντηση&nbsp</th>
+                            <th>Μονάδες&nbsp</th>
                             <th>Ομάδα</th>
                         </tr>";
 
                     while($question3_row=mysql_fetch_array($questions3)) {
                         echo"<tr>
                                 <td>Σωστό - Λάθος</td>
-                                <td>".$question3_row["question"]."</td>
+                                <td>".$question3_row["question"]."&nbsp</td>
                                 <td>".$question3_row["right_answer"]."</td>
                                 <td>".$question3_row["points"]."</td>
                                 <td>".$question3_row["team"]."</td>
@@ -94,23 +94,23 @@
                         <tr>
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
-                            <th>Απάντηση 1</th>
-                            <th>Απάντηση 2</th>
-                            <th>Απάντηση 3</th>
-                            <th>Απάντηση 4</th>
-                            <th>Σωστή απάντηση</th>
-                            <th>Μονάδες</th>
+                            <th>Απάντηση 1&nbsp</th>
+                            <th>Απάντηση 2&nbsp</th>
+                            <th>Απάντηση 3&nbsp</th>
+                            <th>Απάντηση 4&nbsp</th>
+                            <th>Σωστή απάντηση&nbsp</th>
+                            <th>Μονάδες&nbsp</th>
                             <th>Ομάδα</th>
                         </tr>";
 
                     while($question2_row=mysql_fetch_array($questions2)) {
                         echo"<tr>
-                                <td>Πολλαπλής επιλογής</td>
-                                <td>".$question2_row["question"]."</td>
-                                <td>".$question2_row["answer1"]."</td>
-                                <td>".$question2_row["answer2"]."</td>
-                                <td>".$question2_row["answer3"]."</td>
-                                <td>".$question2_row["answer4"]."</td>
+                                <td>Πολλαπλής επιλογής&nbsp</td>
+                                <td>".$question2_row["question"]."&nbsp</td>
+                                <td>".$question2_row["answer1"]."&nbsp</td>
+                                <td>".$question2_row["answer2"]."&nbsp</td>
+                                <td>".$question2_row["answer3"]."&nbsp</td>
+                                <td>".$question2_row["answer4"]."&nbsp</td>
                                 <td>".$question2_row["right_answer"]."</td>
                                 <td>".$question2_row["points"]."</td>
                                 <td>".$question2_row["team"]."</td>
@@ -128,15 +128,15 @@
                         <tr>
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
-                            <th>Σωστή απάντηση</th>
-                            <th>Μονάδες</th>
-                            <th>Ομάδα</th>
+                            <th>Σωστή απάντηση &nbsp</th>
+                            <th>Μονάδες&nbsp</th>
+                            <th>Ομάδα&nbsp</th>
                         </tr>";
 
                     while($question1_row=mysql_fetch_array($questions1)) {
                         echo"<tr>
-                                <td>Αριθμητικού αποτελέσματος</td>
-                                <td>".$question1_row["question"]."</td>
+                                <td>Αριθμητικού αποτελέσματος&nbsp</td>
+                                <td>".$question1_row["question"]."&nbsp</td>
                                 <td>".$question1_row["right_answer"]."</td>
                                 <td>".$question1_row["points"]."</td>
                                 <td>".$question1_row["team"]."</td>

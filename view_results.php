@@ -57,10 +57,10 @@
                             <th>Τύπος Ερώτησης</th>
                             <th>Ερώτηση</th>
                             <th>Απάντηση που δόθηκε</th>
-                            <th>Σωστή απάντηση</th>
-                            <th>Μονάδες</th>
-                            <th>Ομάδα</th>
-                            <th>Σωστό ή λάθος</th>
+                            <th>&nbspΣωστή απάντηση</th>
+                            <th>&nbspΜονάδες</th>
+                            <th>&nbspΟμάδα</th>
+                            <th>&nbspΣωστό ή λάθος</th>
                         </tr>";
 
                     while($question1_row=mysql_fetch_array($questions1)) {
@@ -124,7 +124,7 @@
                             echo"
                                 <td>$lesson</td>
                                 <td>".$question2_row["aem"]."</td>
-                                <td>Πολλαπλής επιλογής</td>
+                                <td>Πολλαπλής επιλογής&nbsp</td>
                                 <td>".$question2_row["question"]."</td>
                                 <td>".$question2_row["given_answer"]."</td>
                                 <td>".$question2_row["right_answer"]."</td>
@@ -160,7 +160,7 @@
                             echo"
                                 <td>$lesson</td>
                                 <td>".$question3_row["aem"]."</td>
-                                <td>Αριθμητικού αποτελέσματος</td>
+                                <td>Αριθμητικού αποτελέσματος&nbsp</td>
                                 <td>".$question3_row["question"]."</td>
                                 <td>".$question3_row["given_answer"]."</td>
                                 <td>".$question3_row["right_answer"]."</td>
@@ -194,7 +194,7 @@
                             <th>Απάντηση που δόθηκε</th>
                             <th>Σωστή απάντηση</th>
                             <th>Μονάδες</th>
-                            <th>Ομάδα</th>
+                            <th>&nbspΟμάδα</th>
                             <th>Σωστό ή λάθος</th>
                         </tr>";
 
@@ -331,7 +331,7 @@
                             <th>Απάντηση που δόθηκε</th>
                             <th>Σωστή απάντηση</th>
                             <th>Μονάδες</th>
-                            <th>Ομάδα</th>
+                            <th>&nbspΟμάδα</th>
                             <th>Σωστό ή λάθος</th>
                         </tr>";
 
