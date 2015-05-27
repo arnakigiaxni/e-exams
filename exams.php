@@ -15,7 +15,7 @@
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
             ΑΕΜ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" maxlength="5" name="aem" size="5"/><br><br>
+                <input type="text" maxlength="5" name="aem" size="5" autocomplete="off"/><br><br>
             Μάθημα: <select name="lesson" >
                         <option value='' selected disabled hidden></option>
                         <option value='1'>Προγραμματισμός Ι</option>
@@ -196,7 +196,7 @@
                         $z++;
                         echo"<b>$z)
                             ".$question3_row["question"]."</b> (".$question3_row["points"]." μονάδες)<br><br>
-                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' /><br><br><br>
+                            <input type=text name='given$z' placeholder='Σωστή απάντηση;' autocomplete='off'/><br><br><br>
                         ";
                     }
                     

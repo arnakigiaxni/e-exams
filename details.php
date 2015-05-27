@@ -17,9 +17,9 @@
     <body>
         <div id="details">
             <form method="post" action='questions.php'>
-                Αριθμός ερωτήσεων: <input type="text" maxlength="2" name="questions_number" size="3"/> 
+                Αριθμός ερωτήσεων: <input type="text" maxlength="2" name="questions_number" size="3" autocomplete="off"/> 
                 <br /><br />
-                Χρόνος εξέτασης: <input type="text" maxlength="3" name="time" size="4"/> σε λεπτά της ώρας
+                Χρόνος εξέτασης: <input type="text" maxlength="3" name="time" size="4" autocomplete="off"/> σε λεπτά της ώρας
                 <br /><br />
                 Μάθημα: <select name="lesson" >
                             <option value='' selected disabled hidden></option>

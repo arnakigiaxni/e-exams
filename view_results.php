@@ -25,7 +25,7 @@
                     <option value='4'>Γραμμικός προγραμματισμός</option>
         </select><br><br>
         Αναζήτηση μέσω AEM: &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="aem" id='aem' maxlength="5" size="5" />
+            <input type="text" name="aem" id='aem' maxlength="5" size="5" autocomplete="off"/>
         <br /><br />
 
         <a href="index.php" class="back">Πίσω</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

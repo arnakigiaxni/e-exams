@@ -8,8 +8,8 @@
     
     <body><div id="login">
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
-            Username: <input type="text" name="username" /><br /><br />
-            Password:&nbsp; <input type="password" name="password" /><br /><br />
+            Username: <input type="text" name="username" autocomplete="off" /><br /><br />
+            Password:&nbsp; <input type="password" name="password" autocomplete="off" /><br /><br />
                   
             
             <?php
