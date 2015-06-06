@@ -3,6 +3,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" href="images/favicon.ico"/>
+    
+    <script type = "text/javascript" >
+        history.pushState(null, null, 'results.php');
+        window.addEventListener('popstate', function(event) {
+        history.pushState(null, null, 'results.php');
+        });
+    </script>
 </head>
 
 <body id="body_results">
