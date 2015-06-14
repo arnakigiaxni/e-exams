@@ -9,6 +9,13 @@
     <meta charset="utf8" >
     <title>Εξετάσεις εργαστηρίου</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
+    
+    <script type = "text/javascript" >
+        history.pushState(null, null, 'exams.php');
+        window.addEventListener('popstate', function(event) {
+        history.pushState(null, null, 'exams.php');
+        });
+    </script>
 </head>
 <body id="body_exams">
     <div id="diss">    
